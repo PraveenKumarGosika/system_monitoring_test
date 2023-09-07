@@ -6,6 +6,8 @@ import streamlit as st
 from PIL import Image
 import json
 sns.set_theme()
+
+
 def anomaly_detector(lst):
     m, s = np.mean(lst), np.std(lst)
     cutoff = s*2
